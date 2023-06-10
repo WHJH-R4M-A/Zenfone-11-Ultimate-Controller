@@ -100,5 +100,14 @@ basic.forever(function () {
         basic.clearScreen()
     } else {
         radio.sendNumber(0)
+        basic.showLeds(`
+            . # # # .
+            # # . . #
+            # . # . #
+            # . . # #
+            . # # # .
+            `)
+        basic.pause(50)
+        basic.clearScreen()
     }
 })
