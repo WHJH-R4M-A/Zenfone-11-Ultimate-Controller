@@ -8,6 +8,7 @@ basic.forever(function () {
     // 3下降E
     // 7向左轉F
     // 9向右轉D
+    // 0停止
     // 
     if (KSB045.getJoystickValue(KSB045.valueType.X) < 500 && KSB045.getJoystickValue(KSB045.valueType.Y) >= 400 && KSB045.getJoystickValue(KSB045.valueType.Y) < 600) {
         radio.sendNumber(4)
