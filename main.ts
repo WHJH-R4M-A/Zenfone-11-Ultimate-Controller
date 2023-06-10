@@ -1,15 +1,14 @@
-KSB045.onBtnChanged(KSB045.btnName.C, KSB045.pushType.down, function () {
-	
-})
-KSB045.onBtnChanged(KSB045.btnName.E, KSB045.pushType.down, function () {
-	
-})
-radio.setGroup(173)
+radio.setGroup(1)
 basic.forever(function () {
-    // 8 上升
-    // 2 下降
-    // 4 向左轉
-    // 6 向右轉
+    // 8上升
+    // 2下降
+    // 4向左轉
+    // 6向右轉
+    // 1上升C
+    // 3下降E
+    // 7向左轉F
+    // 9向右轉D
+    // 
     if (KSB045.getJoystickValue(KSB045.valueType.X) < 500 && KSB045.getJoystickValue(KSB045.valueType.Y) >= 400 && KSB045.getJoystickValue(KSB045.valueType.Y) < 600) {
         radio.sendNumber(4)
         basic.showLeds(`
@@ -59,7 +58,7 @@ basic.forever(function () {
         basic.showLeds(`
             . . # . .
             . # . . .
-            # . . . .
+            # . . . #
             . # . . .
             . . # . .
             `)
@@ -70,7 +69,7 @@ basic.forever(function () {
         basic.showLeds(`
             . . # . .
             . . . # .
-            . . . . #
+            # . . . #
             . . . # .
             . . # . .
             `)
